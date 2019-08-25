@@ -27,8 +27,8 @@ app.get('/', function(req, res) {
 })
 
 ///Country Routes
-app.use('/country', require('./resources/routes/country-routes'));
-app.use('/admin', require('./resources/routes/admin-routes'));
+app.use('/admin', require('./resources/routes/country-routes'));
+//app.use('/admin', require('./resources/routes/admin-routes'));
 
 app.listen(PORT, function() {
     console.log(`Server has started on port ${PORT}`)
